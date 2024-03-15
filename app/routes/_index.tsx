@@ -9,8 +9,8 @@ import {
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'Remix+Vite' },
-    { name: 'description', content: 'Welcome to Remix+Vite!' },
+    { title: 'Sakamico Mining Company Inc.' },
+    { name: 'description', content: 'Sustainable Gold Mining in Liberia  ' },
   ]
 }
 
@@ -62,7 +62,7 @@ export default function Index() {
               <button
                 data-collapse-toggle="mobile-menu-2"
                 type="button"
-                className="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden  "
+                className="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-2 focus:ring-gray-200 lg:hidden  "
                 aria-controls="mobile-menu-2"
                 aria-expanded="false"
               >
@@ -98,6 +98,22 @@ export default function Index() {
               id="mobile-menu-2"
             >
               <ul className="mt-4 flex flex-col text-xl font-medium lg:mt-0 lg:flex-row lg:space-x-8">
+                <li>
+                  <a
+                    href="#value"
+                    className="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-300 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent  "
+                  >
+                    Gold Commodity
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    className="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-300 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent  "
+                  >
+                    About Sakamico
+                  </a>
+                </li>
                 <li>
                   <a
                     href="#team"
@@ -153,8 +169,8 @@ export default function Index() {
               </p>
 
               <a
-                href="#"
-                className="inline-flex items-center justify-center  border border-gray-300 px-5 py-3 text-center text-xl font-medium text-gray-200 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100  "
+                href="#value"
+                className="inline-flex items-center justify-center  border border-gray-300 px-5 py-3 text-center text-xl font-medium text-gray-200 hover:bg-gray-100 hover:text-gray-900 focus:ring-4 focus:ring-gray-100  "
               >
                 Learn More{' '}
               </a>
@@ -166,23 +182,83 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="bg-[#191919] text-white">
+        <section id="value" className="bg-[#191919] text-white">
           <div className=" mx-auto px-4 py-8 lg:px-6  lg:pt-32 ">
-            <div className="mx-auto mb-8 text-center ">
+            <div className="mx-auto mb-16 text-center ">
               <h2 className="text-base font-semibold leading-7 text-yellow-500">
                 Sound Investment
               </h2>
-              <p className="mb-12 mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-                Today's Gold Prices
+              <p className=" mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
+                Gold: A Stable Investment at an All Time High{' '}
               </p>
-              <iframe
-                src="https://goldbroker.com/widget/live/XAU?currency=USD&height=500"
-                scrolling="no"
-                frameBorder="0"
-                width="100%"
-                height="500"
-                style={{ border: 0, overflow: 'hidden' }}
-              ></iframe>
+              <p className="mx-auto mt-2 max-w-6xl font-light text-gray-400 sm:text-xl lg:mb-6 ">
+                Gold's remarkable journey to its current peak value underscores
+                its unwavering appeal as a secure and steady investment. Amidst
+                global economic uncertainties, gold shines as a resilient store
+                of value, offering investors a safe haven and a hedge against
+                inflation. Its current all-time high not only reflects its
+                enduring significance but also presents a prime opportunity for
+                those looking to diversify and strengthen their investment
+                portfolio with a commodity that has consistently proven its
+                worth over time.
+              </p>
+              <div className="flex flex-col md:flex-row md:space-x-2">
+                <div className="flex w-full flex-col space-y-2">
+                  <iframe
+                    src="https://goldbroker.com/widget/live/XAU?currency=USD&weight_unit=kg&height=500"
+                    scrolling="no"
+                    frameBorder="0"
+                    width="100%"
+                    height="500"
+                    style={{ border: 0, overflow: 'hidden' }}
+                  ></iframe>
+                  <p>Todays Prices</p>
+                </div>
+                <div className="flex w-full flex-col space-y-2">
+                  <iframe
+                    src="https://goldbroker.com/widget/historical/XAU?height=500&currency=USD&weight_unit=kg"
+                    scrolling="no"
+                    frameBorder="0"
+                    width="100%"
+                    height="500"
+                    style={{ border: 0, overflow: 'hidden' }}
+                  ></iframe>
+                  <p>All Time High </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div className=" md:max-w-screen-3xl p-6  md:grid  md:grid-cols-5 md:gap-16 md:p-32 ">
+            <div className="col-span-2 max-w-2xl">
+              <h2 className="text-base font-semibold leading-7 text-yellow-700">
+                About Sakamico
+              </h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Mining with Impact, Transparency, & Trust{' '}
+              </p>
+              <p className="mt-2  font-light text-gray-400 sm:text-xl lg:mb-6 ">
+                At Sakamico, we are committed to more than just mining. We
+                strive to enhance the community that surrounds us, providing
+                local employment opportunities, comprehensive training, and
+                improving local infrastructure by supporting a school and a
+                health clinic.
+                <p className="mt-2  font-light text-gray-400 sm:text-xl lg:mb-6">
+                  We are committed to upholding the highest standards of
+                  environmental stewardship in adherence to the Environmental
+                  Protection and Management Law (EPML) and the Sackson Consult
+                  (ISO) Compliance certification.
+                </p>
+              </p>
+            </div>
+            <div className="col-span-3 w-full ">
+              <img
+                className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="images/intro-img.png"
+                alt="intro"
+              />
             </div>
           </div>
         </section>
@@ -196,7 +272,7 @@ export default function Index() {
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Committed Experts from a World of Experience
               </p>
-              <p className="font-light text-gray-400 sm:text-xl lg:mb-6 ">
+              <p className="mt-2 font-light text-gray-400 sm:text-xl lg:mb-6 ">
                 Meet the people behind Sakamico: Our executive team combines
                 decades of expertise in the gold mining industry, and
                 international business with a forward-thinking approach to
@@ -341,14 +417,14 @@ export default function Index() {
         <section className="bg-gray-50" id="sustainability">
           <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto max-w-2xl lg:text-center">
+              <div className="mx-auto  max-w-screen-lg lg:text-center">
                 <h2 className="text-base font-semibold leading-7 text-yellow-700">
                   Sustainable Focus
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   Sustainable Excellence: Our Commitment to People and Planet
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-2 font-light text-gray-400 sm:text-xl lg:mb-6 ">
                   Sakamico is dedicated to embedding sustainable mining
                   practices into the core of our operations. Our commitment to
                   sustainability is demonstrated through a comprehensive
@@ -380,12 +456,16 @@ export default function Index() {
         </section>
 
         <section id="process">
-          <div className="relative  bg-[#191919] px-6   lg:px-0">
+          <div className="relative bg-[#191919] px-6  py-6 md:py-0   lg:px-0">
             <div className="mx-auto grid  grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-4  lg:items-start  ">
               <div className="  lg:col-span-2   lg:row-span-2  ">
-                <img className="w-auto" src="images/exploration3.webp" alt="" />
+                <img
+                  className="w-auto"
+                  src="images/sakamico-exploration1.jpg"
+                  alt=""
+                />
               </div>
-              <div className="mt-12 md:mt-24  lg:col-span-2  lg:mx-auto  lg:w-full lg:grid-cols-2 lg:px-8">
+              <div className="mb-12 mt-12 md:mb-0 md:mt-24  lg:col-span-2  lg:mx-auto  lg:w-full lg:grid-cols-2 lg:px-8">
                 <div className="lg:pl-12">
                   <div className="lg:max-w-lg">
                     <p className="text-base font-semibold leading-7 text-yellow-700">
@@ -393,7 +473,7 @@ export default function Index() {
                       <span className="text-yellow-500">Exploration</span>
                     </p>
 
-                    <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
+                    <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl ">
                       Unveiling Potential
                     </h2>
                     <p className="mt-6 text-lg leading-8 text-gray-200">
@@ -411,7 +491,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="relative  bg-gray-100 px-6   lg:px-0">
+          <div className="relative  bg-gray-100 px-6 py-6 md:py-0  lg:px-0">
             <div className="mx-auto grid max-w-2xl grid-cols-1  gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start ">
               <div className="mt-12 md:mt-24 lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                 <div className="lg:pr-4">
@@ -428,9 +508,11 @@ export default function Index() {
                       marked by a series of carefully orchestrated steps.
                       Starting with excavation, we gently uncover the
                       gold-bearing materials, ensuring every grain is accounted
-                      for. This process seamlessly transitions into washing,
-                      where gold is separated from other materials, revealing
-                      its true worth.
+                      for. We use a surface extraction method which poses the
+                      minimal impact to the environment aswell as being the
+                      safest form of mining for our workers.This process
+                      seamlessly transitions into washing, where gold is
+                      separated from other materials, revealing its true worth.
                     </p>
                   </div>
                 </div>
@@ -441,12 +523,12 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="relative isolate overflow-hidden bg-[#191919]  px-6  lg:overflow-visible lg:px-0">
+          <div className="relative isolate overflow-hidden bg-[#191919] px-6 py-6  md:py-0  lg:overflow-visible lg:px-0">
             <div className="mx-auto grid  grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-4  lg:items-start ">
               <div className="  lg:sticky lg:col-span-2   lg:row-span-2  lg:overflow-hidden">
                 <img className="w-full" src="images/export.jpg" alt="" />
               </div>
-              <div className=" mt-12 md:mt-24 lg:col-span-2  lg:mx-auto  lg:w-full  lg:grid-cols-2 lg:px-8">
+              <div className=" mb-12 mt-12 md:mb-0 md:mt-24 lg:col-span-2  lg:mx-auto  lg:w-full  lg:grid-cols-2 lg:px-8">
                 <div className="lg:pl-12">
                   <div className="lg:max-w-lg">
                     <p className="text-base font-semibold leading-7 text-yellow-700">
@@ -472,7 +554,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="relative  bg-gray-100 px-6   lg:px-0">
+          <div className="relative  bg-gray-100 px-6 py-6 md:py-0  lg:px-0">
             <div className="mx-auto grid max-w-2xl grid-cols-1  gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
               <div className="mt-12 md:mt-24 lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                 <div className="lg:pr-4">
@@ -503,12 +585,12 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="relative isolate overflow-hidden bg-[#191919] px-6  lg:overflow-visible lg:px-0">
+          <div className="relative isolate overflow-hidden bg-[#191919] px-6 py-6 md:py-0  lg:overflow-visible lg:px-0">
             <div className="mx-auto grid  grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-4  lg:items-start ">
               <div className="  lg:sticky lg:col-span-2   lg:row-span-2  lg:overflow-hidden">
                 <img className="w-full" src="images/value.jpg" alt="" />
               </div>
-              <div className="mt-12 md:mt-24 lg:col-span-2  lg:mx-auto  lg:w-full  lg:grid-cols-2 lg:px-8">
+              <div className="mb-12 mt-12 md:mb-0 md:mt-24 lg:col-span-2  lg:mx-auto  lg:w-full  lg:grid-cols-2 lg:px-8">
                 <div className="lg:pl-12">
                   <div className="lg:max-w-lg">
                     <p className="text-base font-semibold leading-7 text-yellow-700">
@@ -548,12 +630,23 @@ export default function Index() {
                   />
                 </a>
               </div>
+
               <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
                 <div>
                   <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 ">
                     Links
                   </h2>
                   <ul className="text-gray-600 ">
+                    <li className="mb-4">
+                      <a href="#value" className="hover:underline">
+                        Gold Commodity
+                      </a>
+                    </li>
+                    <li className="mb-4">
+                      <a href="#about" className="hover:underline">
+                        About Sakamico
+                      </a>
+                    </li>
                     <li className="mb-4">
                       <a href="#team" className="hover:underline">
                         Executive Team
