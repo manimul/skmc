@@ -205,17 +205,6 @@ export default function Index() {
               <div className="flex flex-col md:flex-row md:space-x-2">
                 <div className="flex w-full flex-col space-y-2">
                   <iframe
-                    src="https://goldbroker.com/widget/live/XAU?currency=USD&weight_unit=kg&height=500"
-                    scrolling="no"
-                    frameBorder="0"
-                    width="100%"
-                    height="500"
-                    style={{ border: 0, overflow: 'hidden' }}
-                  ></iframe>
-                  <p>Todays Prices</p>
-                </div>
-                <div className="flex w-full flex-col space-y-2">
-                  <iframe
                     src="https://goldbroker.com/widget/historical/XAU?height=500&currency=USD&weight_unit=kg"
                     scrolling="no"
                     frameBorder="0"
@@ -230,8 +219,8 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="about">
-          <div className=" md:max-w-screen-3xl p-6  md:grid  md:grid-cols-5 md:gap-16 md:p-32 ">
+        <section id="about " className="mx-auto md:max-w-screen-2xl">
+          <div className="  p-6  md:grid  md:grid-cols-5 md:gap-16 md:p-32 ">
             <div className="col-span-2 max-w-2xl">
               <h2 className="text-base font-semibold leading-7 text-yellow-700">
                 About Sakamico
@@ -239,24 +228,83 @@ export default function Index() {
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Mining with Impact, Transparency, & Trust{' '}
               </p>
-              <p className="mt-2  font-light text-gray-400 sm:text-xl lg:mb-6 ">
-                At Sakamico, we are committed to more than just mining. We
-                strive to enhance the community that surrounds us, providing
-                local employment opportunities, comprehensive training, and
-                improving local infrastructure by supporting a school and a
-                health clinic.
-                <p className="mt-2  font-light text-gray-400 sm:text-xl lg:mb-6">
-                  We are committed to upholding the highest standards of
-                  environmental stewardship in adherence to the Environmental
-                  Protection and Management Law (EPML) and the Sackson Consult
-                  (ISO) Compliance certification.
+              <p className="mt-2  font-light text-gray-600 sm:text-xl lg:mb-6 ">
+                SAKAMICO is a fully licensed Liberian company, recognized under
+                the laws of the Republic of Liberia. With ownership and
+                operation of two gold mines initiated in 2019 and 2023
+                respectively, the company has transitioned from exploration to
+                active production, reflecting a commitment to growth and
+                sustainability in the mining sector.
+                <p className="mt-4  font-light text-gray-600 sm:text-xl lg:mb-6">
+                  SAKAMICO’s strategic approach prioritizes safety,
+                  cost-efficiency, and a substantial commitment to social and
+                  environmental responsibility. The company forms a crucial part
+                  of the Bambwa Group AB portfolio, a Swedish venture capital
+                  firm that invests in promising growth companies across
+                  Scandinavia and Africa, with a focus on generating significant
+                  local benefits.
                 </p>
               </p>
             </div>
             <div className="col-span-3 w-full ">
               <img
                 className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                src="images/intro-img.png"
+                src="images/location.png"
+                alt="intro"
+              />
+            </div>
+          </div>
+
+          <div className=" mx-auto p-6 md:grid   md:grid-cols-5 md:gap-16 md:px-32 md:pb-32   ">
+            <div className="col-span-3 w-full ">
+              <img
+                className="w-full  rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="images/mines.png"
+                alt="intro"
+              />
+            </div>
+            <div className="col-span-2 max-w-2xl text-gray-600 ">
+              <p className="mt-2  font-light  sm:text-xl lg:mb-6 ">
+                Sakamico operates two mining sites, each spanning approximately
+                100 acres in the Tappita region of Liberia, specifically near
+                Kartee Village in Nimba County. Positioned about 300 miles east
+                of Monrovia by land and 10 km northwest of Tappita city, these
+                sites are part of the geologically significant Liberian age
+                province (2700-3000 million years).{' '}
+                <p className="mt-4  font-light  sm:text-xl lg:mb-6">
+                  The local geology is dominated by high-grade metamorphic
+                  rocks, including leucocratic gneiss, with a composite unit of
+                  Itabarite and Schist running northeast to southwest. This
+                  region forms part of the Gbangba quadrangle, known for its
+                  rich mineral resources.
+                </p>
+              </p>
+            </div>
+          </div>
+
+          <div className=" md:max-w-screen-3xl p-6  md:grid  md:grid-cols-5 md:gap-16 md:px-32 md:pb-32 ">
+            <div className="col-span-3 max-w-2xl text-gray-600 ">
+              <p className="mt-2  font-light sm:text-xl lg:mb-6 ">
+                At Sakamico, our commitment extends beyond mining. We are
+                dedicated to uplifting the surrounding community by providing
+                local employment opportunities, comprehensive training, and
+                enhancing local infrastructure through support for a school and
+                a health clinic.
+                <p className="mt-4  font-light  sm:text-xl lg:mb-6">
+                  We adhere to the highest standards of environmental
+                  stewardship, complying with the Environmental Protection and
+                  Management Law (EPML) and Sackson Consult (ISO) Compliance
+                  certification. Additionally, Sakamico follows the EHS
+                  Guidelines for Good International Industry Practice (GIIP), as
+                  referenced in the World Bank’s Environmental and Social
+                  Framework and in IFC’s Performance Standards.
+                </p>
+              </p>
+            </div>
+            <div className="col-span-2 w-full ">
+              <img
+                className="w-full  rounded-lg sm:rounded-none sm:rounded-l-lg"
+                src="images/approach.png"
                 alt="intro"
               />
             </div>
@@ -280,88 +328,86 @@ export default function Index() {
               </p>
             </div>
             <div className="mb-6 grid gap-8 md:grid-cols-2 lg:mb-16">
-              <div className="items-center rounded-lg bg-white text-white shadow sm:flex  ">
-                <a href="#">
-                  <img
-                    className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                    src="images/kaliefah.jpg"
-                    alt="Kaliefah Soko Sackor image"
-                  />
-                </a>
-                <div className="p-5">
+              <div className=" grid grid-cols-2 items-center gap-3 rounded-lg  bg-white shadow ">
+                <img
+                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                  src="images/kaliefah.jpg"
+                  alt="Kaliefah Soko Sackor image"
+                />
+
+                <div className=" p-5">
                   <h3 className="text-xl font-bold tracking-tight text-gray-800 ">
                     <a href="#">Kaliefah Soko Sackor</a>
                   </h3>
                   <span className="text-gray-500 ">CEO</span>
-
-                  <ul className="flex space-x-4 sm:mt-0">
-                    <li>
-                      <a href="#" className=" ">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          color="white"
-                        >
-                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                  <p className="text-gray-500">
+                    Kaliefah Soko Sackor is the Founder and CEO with over 20
+                    years of experience in mining operations. Educated in the
+                    UK, Saudi Arabia, and Norway, he brings a strong background
+                    in risk mitigation and hands-on leadership.
+                  </p>
                 </div>
               </div>
-              <div className="items-center rounded-lg bg-gray-50 shadow sm:flex  ">
-                <a href="#">
-                  <img
-                    className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                    src="/images/freeman.jpg"
-                    alt="Freeman Kamara Image"
-                  />
-                </a>
+
+              <div className=" grid grid-cols-2 items-center gap-3 rounded-lg  bg-white shadow ">
+                <img
+                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                  src="/images/freeman.jpg"
+                  alt="Freeman Kamara Image"
+                />
+
                 <div className="p-5">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 ">
                     <a href="#">Freeman Kamara</a>
                   </h3>
                   <span className="text-gray-500 ">CFO</span>
+                  <p className="text-gray-500"></p>
 
-                  <ul className="flex space-x-4 sm:mt-0">
-                    <li>
-                      <a
-                        href="#"
-                        className="text-gray-500 hover:text-gray-900 "
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
+                  <ul className="flex space-x-4 sm:mt-0"></ul>
                 </div>
               </div>
-              <div className="items-center rounded-lg bg-gray-50 shadow sm:flex ">
-                <a href="#">
-                  <img
-                    className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                    src="images/michael.jpg"
-                    alt="Michael Mathiesen Image"
-                  />
-                </a>
+
+              <div className=" grid grid-cols-2 items-center gap-3 rounded-lg  bg-white shadow ">
+                <img
+                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                  src="images/kali.jpg"
+                  alt="Kali Sackor Image"
+                />
+
                 <div className="p-5">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900">
-                    <a href="#">Michael Mathiesen</a>
+                    <a href="#">Kali Sackor</a>
+                  </h3>
+                  <span className="text-gray-500 ">COO</span>
+
+                  <ul className="flex space-x-4 sm:mt-0"></ul>
+                </div>
+              </div>
+
+              <div className=" grid grid-cols-2 items-center gap-3 rounded-lg  bg-white shadow ">
+                <img
+                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                  src="images/michael.jpg"
+                  alt="Michael Mathiesen Image"
+                />
+
+                <div className="p-5">
+                  <h3 className="text-xl font-bold tracking-tight text-gray-900">
+                    <a href="https://www.linkedin.com/in/michaelmathiesen/">
+                      Michael Mathiesen
+                    </a>
                   </h3>
                   <span className="text-gray-500 ">Chairman</span>
-
-                  <ul className="flex space-x-4 sm:mt-0">
+                  <p className="text-gray-500">
+                    Over 30 years of experience in international business,
+                    focusing on building companies and investing in ventures
+                    globally. His 12 years of business operations in Africa,
+                    particularly in Liberia.
+                  </p>
+                  <ul className="flex space-x-4 sm:mt-2">
                     <li>
                       <a
-                        href="#"
+                        href="https://www.linkedin.com/in/michaelmathiesen/"
                         className="text-gray-500 hover:text-gray-900 "
                       >
                         <svg
@@ -377,24 +423,30 @@ export default function Index() {
                   </ul>
                 </div>
               </div>
-              <div className="items-center rounded-lg bg-gray-50 shadow sm:flex  ">
-                <a href="#">
-                  <img
-                    className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                    src="images/hakan.jpg"
-                    alt="Håkan Hollerup Image"
-                  />
-                </a>
+
+              <div className=" grid grid-cols-2 items-center gap-3 rounded-lg  bg-white shadow ">
+                <img
+                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                  src="images/hakan.jpg"
+                  alt="Håkan Hollerup Image"
+                />
+
                 <div className="p-5">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 ">
-                    <a href="#">Håkan Hollerup</a>
+                    <a href="https://www.linkedin.com/in/h%C3%A5kan-hollerup-b63aa76/">
+                      Håkan Hollerup
+                    </a>
                   </h3>
                   <span className="text-gray-500 ">Board Member</span>
-
-                  <ul className="flex space-x-4 sm:mt-0">
+                  <p className="text-gray-500">
+                    Owner of Hollerup & Partners AB. Over 30 years of experience
+                    as a certified public accountant, Håkan brings a wealth of
+                    financial expertise to his role.
+                  </p>
+                  <ul className="flex space-x-4 sm:mt-2">
                     <li>
                       <a
-                        href="#"
+                        href="#https://www.linkedin.com/in/h%C3%A5kan-hollerup-b63aa76/"
                         className="text-gray-500 hover:text-gray-900 "
                       >
                         <svg
@@ -411,6 +463,11 @@ export default function Index() {
                 </div>
               </div>
             </div>
+            <h3 className="mx-auto my-4 text-center text-3xl italic">
+              And it goes without saying - we are nothing without our mining
+              team
+            </h3>
+            <img className="mx-auto w-full" src="images/staff.png" />
           </div>
         </section>
 
