@@ -5,6 +5,11 @@ import {
   CloudArrowUpIcon,
   FingerPrintIcon,
   LockClosedIcon,
+  UserGroupIcon,
+  EnvelopeOpenIcon,
+  ChatBubbleLeftRightIcon,
+  ArrowTrendingUpIcon,
+  MapPinIcon,
 } from '@heroicons/react/24/outline'
 
 export const meta: MetaFunction = () => {
@@ -21,25 +26,25 @@ export default function Index() {
       name: 'Community Development',
       description:
         'We believe in growing alongside the communities that host our operations. Sakamico actively participates in the development of local communities through initiatives that improve education, healthcare, and infrastructure, thereby ensuring long-term prosperity for all stakeholders.',
-      icon: CloudArrowUpIcon,
+      icon: UserGroupIcon,
     },
     {
       name: 'Sustainable Mining Practices',
       description:
         'Our commitment to sustainability is reflected in every decision we make. From minimizing our environmental footprint through the use of renewable energy and water reclamation systems to implementing land rehabilitation projects post-mining, we integrate sustainable practices wherever possible. We are also committed to reducing our carbon footprint and enhancing biodiversity conservation to ensure that our operations contribute positively to global environmental goals.',
-      icon: LockClosedIcon,
+      icon: ArrowPathIcon,
     },
     {
       name: 'Stakeholder Engagement',
       description:
         'Understanding that collaboration is key to sustainable success, Sakamico engages with all stakeholders, including local communities, governments, and environmental organizations, to ensure our practices meet the highest standards of social and environmental responsibility. Through transparent communication and active collaboration, we work to build trust and create shared value',
-      icon: ArrowPathIcon,
+      icon: ChatBubbleLeftRightIcon,
     },
     {
       name: 'Continuous Improvement',
       description:
         'Sakamico is dedicated to continuous improvement in our sustainability efforts. We regularly review our practices, stay abreast of the latest developments in sustainable mining, and are always looking for innovative ways to enhance our impact on society and the environment. By setting ambitious targets and rigorously monitoring our progress, we aim to not just meet but exceed international standards for sustainable mining',
-      icon: FingerPrintIcon,
+      icon: ArrowTrendingUpIcon,
     },
   ]
 
@@ -136,6 +141,14 @@ export default function Index() {
                     className="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-300 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent"
                   >
                     Our Process
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    className="lg:hover:text-primary-700 block border-b border-gray-100 py-2 pl-3 pr-4 text-gray-300 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent"
+                  >
+                    Contact Us
                   </a>
                 </li>
               </ul>
@@ -508,6 +521,21 @@ export default function Index() {
                   ))}
                 </dl>
               </div>
+              <div>
+                <p className=" bold mx-auto mb-6 mt-24 max-w-screen-lg text-center text-2xl italic">
+                  Sakamico is also committed to the United Nations Sustainable
+                  Development Goals (SDGs) and has aligned its sustainability
+                  strategy with the following goals: <br />
+                </p>
+                <div className="grid grid-cols-3 gap-4">
+                  <img src="images/sdgs/01.png" alt="sdg1" />
+                  <img src="images/sdgs/02.png" alt="sdg2" />
+                  <img src="images/sdgs/03.png" alt="sdg3" />
+                  <img src="images/sdgs/04.png" alt="sdg4" />
+                  <img src="images/sdgs/08.png" alt="sdg8" />
+                  <img src="images/sdgs/09.png" alt="sdg9" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -675,7 +703,68 @@ export default function Index() {
           </div>
         </section>
 
-        <footer className="mt-32 bg-white p-4 sm:p-6 ">
+        <section className="border-b-2  bg-gray-50" id="contact">
+          <div className="bg-white py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className="mx-auto  max-w-screen-lg lg:text-center">
+                <h2 className="text-base font-semibold leading-7 text-yellow-700">
+                  Contact Us
+                </h2>
+                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  Please get in touch if you would like to discuss investment or
+                  partnership opportunities.
+                </p>
+                <p className="mt-2 font-light text-gray-400 sm:text-xl lg:mb-6 ">
+                  Sakamico is always open to exploring new partnerships, if you
+                  would like to talk please reach out.
+                </p>
+              </div>
+              <div className="mx-auto mt-16 max-w-3xl sm:mt-20 lg:mt-24 ">
+                <dl className="mx-auto grid grid-cols-1  lg:grid-cols-2 ">
+                  <div className="relative pl-16">
+                    <dt className="text-lg  font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-700">
+                        <EnvelopeOpenIcon
+                          className="h-6 w-6 text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      Email
+                    </dt>
+                    <dd className="mt-2 text-lg  leading-7 text-gray-600">
+                      <a href="mailto:hello@sakamico.com">
+                        {' '}
+                        hello@sakamico.com
+                      </a>
+                    </dd>
+                  </div>
+                  <div className="relative pl-16">
+                    <dt className="text-lg  font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-700">
+                        <MapPinIcon
+                          className="h-6 w-6 text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      Address
+                    </dt>
+                    <dd className="mt-2 text-lg  leading-7 text-gray-600">
+                      Sweden:
+                      <br /> BOX 934, 220 09 Lund, Sweden
+                    </dd>
+                    <dd className="mt-2 text-lg  leading-7 text-gray-600">
+                      Liberia:
+                      <br /> Baptist Seminary, RIA Highway, Paynesville City,
+                      Liberia
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer className="mt-32 border-gray-200  bg-white p-4 sm:p-6 ">
           <div className="mx-auto max-w-screen-xl">
             <div className="md:flex md:justify-between">
               <div className="mb-6 md:mb-0">
@@ -712,6 +801,11 @@ export default function Index() {
                     <li className="mb-4">
                       <a href="#process" className="hover:underline">
                         Our Process
+                      </a>
+                    </li>
+                    <li className="mb-4">
+                      <a href="#contact" className="hover:underline">
+                        Contact Us
                       </a>
                     </li>
                   </ul>
